@@ -4,20 +4,20 @@ class Main {
   public static void main(String[] args) {
     System.out.println("Type a number to count down or up from then press \"Enter\": ");
 
-    Scanner num = new Scanner(System.in);
+    Scanner s = new Scanner(System.in);
 
-    int userNum = num.nextInt();
+    int number = s.nextInt();
     //Not sure if we need to worry about the user inputing letters, characters, or decimals for this lab. Results in an Exception in thread "main"
-
-    if (userNum >= 0) {
-      while (userNum >= 0) {
-        System.out.println(userNum);
-        userNum--;
+    
+    if (number >= 0) {
+      while (number >= 0) {
+        System.out.println(number);
+        number--;
       }
     } else {
-      while (userNum <= 0) {
-        System.out.println(userNum);
-        userNum++;
+      while (number <= 0) {
+        System.out.println(number);
+        number++;
       }
 
     }
